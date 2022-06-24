@@ -23,7 +23,7 @@ def generate_bpf_file(out_path, resp):
                 break
             code,jt,jf,k = l.split(' ')
             bts = pack('<HBBI', int(code), int(jt), int(jf), int(k))
-            print bts.encode('hex')
+            print(bts.encode('hex'))
             of.write(bts)
             
 
@@ -37,11 +37,11 @@ def cmpl(fltr, out_path):
     try:
         resp = subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError:
-        print 'failed running tcpdump'
+        print('failed running tcpdump')
         return 
 
     if not out_path:
-        print resp
+        print(resp)
         return
     
     generate_bpf_file(out_path, resp)
