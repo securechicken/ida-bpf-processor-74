@@ -39,16 +39,17 @@ put the file loader `bpf_loader.py` in:
 ```
 
 ## Supported Versions
-- IDA 7.x (tested on 7.0).
+- IDA 7.4+ (tested on 7.7).
+- For 7.0 to 7.3, use [this](https://github.com/bnbdr/ida-bpf-processor/releases/tag/v2.0.0).
 - For older IDA versions use [this](https://github.com/bnbdr/ida-bpf-processor/releases/tag/v1.0.0).
 
-
 ## License
-[MIT](https://opensource.org/licenses/MIT) 2018 [@bnbdr](https://github.com/bnbdr/)
+[MIT](https://opensource.org/licenses/MIT) 2018-2022 [@bnbdr](https://github.com/bnbdr/), [@securechicken](https://github.com/securechicken/)
 
 ## Relevant References
 - https://www.hex-rays.com/products/ida/support/idapython_docs/
 - https://www.hex-rays.com/products/ida/support/sdkdoc/
+- https://hex-rays.com/products/ida/support/ida74_idapython_no_bc695_porting_guide.shtml
 - http://www.tcpdump.org/papers/bpf-usenix93.pdf
 - https://www.kernel.org/doc/Documentation/networking/filter.txt
 - http://man7.org/linux/man-pages/man2/seccomp.2.html
